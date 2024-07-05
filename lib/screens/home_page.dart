@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_diagnosis_ui/screens/health_results.dart';
 
 class HealthDiagnosisPage extends StatelessWidget {
   const HealthDiagnosisPage({super.key});
@@ -70,14 +71,24 @@ class HealthDiagnosisPage extends StatelessWidget {
                               ),
                               const SizedBox(height: 8),
                               ElevatedButton(
-                                onPressed: () {},
-                                child: const Wrap(
-                                  crossAxisAlignment: WrapCrossAlignment.center,
-                                  children: [
-                                    Icon(Icons.info),
-                                    SizedBox(width: 10),
-                                    Text('Learn More')
-                                  ],
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const HealthResultPage()),
+                                  );
+                                },
+                                child: const Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Wrap(
+                                    crossAxisAlignment: WrapCrossAlignment.center,
+                                    children: [
+                                      Icon(Icons.info),
+                                      SizedBox(width: 10),
+                                      Text('Learn More')
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
