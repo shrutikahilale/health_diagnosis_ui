@@ -30,7 +30,7 @@ class HealthResultPage extends StatelessWidget {
           children: [
             Text(
               'Diagnosis Results',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
             const SizedBox(height: 10),
             Row(
@@ -45,7 +45,7 @@ class HealthResultPage extends StatelessWidget {
                 Expanded(
                   child: Text(
                     'Summary of the health issue diagnosed with severity: Moderate. Further treatments and home remedies are recommended.',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
               ],
@@ -53,7 +53,7 @@ class HealthResultPage extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               'Suggested Treatments',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
             const SizedBox(height: 10),
             const Row(
@@ -76,7 +76,7 @@ class HealthResultPage extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               'Home Remedies',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
             const SizedBox(height: 10),
             const Row(
